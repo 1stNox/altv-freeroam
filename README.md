@@ -14,4 +14,5 @@ Use them as any other resource. You have to use this chat resource due to a depe
 
 /tp x y z
 
-Credits: alt:V Freeroam Example Resource
+# Credits 
+alt:V Freeroam Example Resource
