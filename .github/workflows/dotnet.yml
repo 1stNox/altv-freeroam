@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      working-directory: ./altv-freeroam/src/AltV.Freeroam.Server/AltV.Freeroam
+      working-directory: ./src/AltV.Freeroam.Server/AltV.Freeroam
       run: dotnet restore
     - name: Build
-      working-directory: ./altv-freeroam/src/AltV.Freeroam.Server/AltV.Freeroam
+      working-directory: ./src/AltV.Freeroam.Server/AltV.Freeroam
       run: dotnet build --no-restore
