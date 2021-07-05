@@ -11,7 +11,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      working-directory: ./src/AltV.Freeroam.Server/AltV.Freeroam
+      working-directory: ./altv-freeroam/src/AltV.Freeroam.Server/AltV.Freeroam
 
     steps:
     - uses: actions/checkout@v2
