@@ -1,11 +1,10 @@
-﻿using System;
-using AltV.Freeroam.Structure;
+﻿using AltV.Freeroam.Server.Structure;
 using AltV.Net;
 using AltV.Net.Elements.Entities;
 using AltV.Net.Enums;
 using AltV.Net.Resources.Chat.Api;
 
-namespace AltV.Freeroam.Behaviour.Handler
+namespace AltV.Freeroam.Server.Behaviour.Handler
 {
     public class CommandHandler : IScript
     {
@@ -16,9 +15,9 @@ namespace AltV.Freeroam.Behaviour.Handler
                 throw new ArgumentNullException(nameof(player));
 
             var socialClubId = player.SocialClubId;
-            
+
             player.SetPosition(x, y, z);
-            
+
             Alt.Log($"{socialClubId} teleported to {x} {y} {z}");
         }
 
@@ -34,11 +33,11 @@ namespace AltV.Freeroam.Behaviour.Handler
             var vehicle = player.Vehicle;
 
             vehicle?.Remove();
-            
+
             var newVehicle = Alt.CreateVehicle(vehName, player.Position, player.Rotation);
             newVehicle.EngineOn = true;
             newVehicle.LockState = VehicleLockState.Unlocked;
-            
+
             Alt.Log($"{socialClubId} spawned {vehName}");
         }
 
@@ -50,7 +49,7 @@ namespace AltV.Freeroam.Behaviour.Handler
 
             var socialClubId = player.SocialClubId;
             var pos = player.Position;
-            
+
             player.Emit("Command:Pos:Print", pos);
             Alt.Log($"{socialClubId} is at pos {pos}");
         }

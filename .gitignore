@@ -2,3 +2,6 @@
 bin
 obj
 server
+.vs
+node_modules
+/dist

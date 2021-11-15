@@ -1,9 +1,8 @@
-﻿using System;
-using AltV.Freeroam.Structure;
+﻿using AltV.Freeroam.Server.Structure;
 using AltV.Net;
 using AltV.Net.Elements.Entities;
 
-namespace AltV.Freeroam.Creational
+namespace AltV.Freeroam.Server.Creational
 {
     public class ServerVehicleFactory : IEntityFactory<IVehicle>
     {

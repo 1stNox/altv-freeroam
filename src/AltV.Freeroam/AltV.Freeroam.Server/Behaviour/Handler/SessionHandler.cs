@@ -1,11 +1,9 @@
-﻿using System;
-using System.Threading.Tasks;
-using AltV.Freeroam.Structure;
+﻿using AltV.Freeroam.Server.Structure;
 using AltV.Net;
 using AltV.Net.Async;
 using AltV.Net.Data;
 
-namespace AltV.Freeroam.Behaviour.Handler
+namespace AltV.Freeroam.Server.Behaviour.Handler
 {
     public class SessionHandler : IScript
     {
@@ -29,7 +27,7 @@ namespace AltV.Freeroam.Behaviour.Handler
             await player.SetRotationAsync(rotation);
 
             await Task.Delay(100);
-            
+
             Alt.Log($"{socialClubId} connected.");
         }
     }

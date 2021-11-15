@@ -1,10 +1,9 @@
-﻿using AltV.Freeroam.Creational;
-using AltV.Freeroam.Structure;
+﻿using AltV.Freeroam.Server.Creational;
 using AltV.Net;
 using AltV.Net.Async;
 using AltV.Net.Elements.Entities;
 
-namespace AltV.Freeroam.Behaviour
+namespace AltV.Freeroam.Server.Behaviour
 {
     public class Server : AsyncResource
     {
