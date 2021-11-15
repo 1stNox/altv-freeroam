@@ -17,13 +17,19 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: 14
+    - name: Install modules
+      working-directory: ./src/AltV.Freeroam/AltV.Freeroam.Client
+      run: npm i
+    - name: Build Client files
+      working-directory: ./src/AltV.Freeroam/AltV.Freeroam.Client
+      run: npm run build
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      working-directory: ./src/AltV.Freeroam
+      working-directory: ./src/AltV.Freeroam/AltV.Freeroam.Server
       run: dotnet restore
     - name: Build
-      working-directory: ./src/AltV.Freeroam
-      run: dotnet build
+      working-directory: ./src/AltV.Freeroam/AltV.Freeroam.Server
+      run: dotnet build --no-restore
