@@ -35,12 +35,15 @@
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Commands.ts">
+    <TypeScriptCompile Include="src\Commands.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="Index.ts">
+    <TypeScriptCompile Include="src\Index.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
