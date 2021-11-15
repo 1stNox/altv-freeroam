@@ -2,8 +2,7 @@
 
 Download the resource and deps via Releases.
 
-Use them as any other resource. You have to use this chat resource due to a dependency (changed the emit to chat:message).
-
+Use them as any other resource. You have to use the alt:V chat resource, it is a dependency.
 # Available Commands:
 
 /pos   
