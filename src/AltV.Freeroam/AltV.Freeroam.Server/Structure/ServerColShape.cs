@@ -5,9 +5,8 @@ namespace AltV.Freeroam.Server.Structure
 {
     public class ServerColShape : ColShape
     {
-        public ServerColShape(IServer server, IntPtr nativePointer) : base(server, nativePointer)
+        public ServerColShape(ICore core, IntPtr nativePointer) : base(core, nativePointer)
         {
-
         }
     }
 }

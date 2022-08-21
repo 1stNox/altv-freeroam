@@ -6,9 +6,9 @@ namespace AltV.Freeroam.Server.Creational
 {
     public class ServerPlayerFactory : IEntityFactory<IPlayer>
     {
-        public IPlayer Create(IServer server, IntPtr entityPointer, ushort id)
+        public IPlayer Create(ICore core, IntPtr entityPointer, ushort id)
         {
-            return new ServerPlayer(server, entityPointer, id);
+            return new ServerPlayer(core, entityPointer, id);
         }
     }
 }

@@ -6,9 +6,9 @@ namespace AltV.Freeroam.Server.Creational
 {
     public class ServerColShapeFactory : IBaseObjectFactory<IColShape>
     {
-        public IColShape Create(IServer server, IntPtr baseObjectPointer)
+        public IColShape Create(ICore core, IntPtr baseObjectPointer)
         {
-            return new ServerColShape(server, baseObjectPointer);
+            return new ServerColShape(core, baseObjectPointer);
         }
     }
 }
