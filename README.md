@@ -1,5 +1,7 @@
 ## altv-freeroam
 
+### Release files are outdated, src is up-to-date
+
 Download the resource and deps via Releases.
 
 Use them as any other resource. You have to use the alt:V chat resource, it is a dependency.
