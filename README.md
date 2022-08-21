@@ -1,5 +1,3 @@
-# OUTDATED - UPDATE NUGETS
-
 ## altv-freeroam
 
 Download the resource and deps via Releases.
