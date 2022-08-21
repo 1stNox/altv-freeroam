@@ -1,6 +1,6 @@
-# OUTDATED - UPDATE NUGETS
-
 ## altv-freeroam
+
+### Release files are outdated, src is up-to-date
 
 Download the resource and deps via Releases.
 
